@@ -1,0 +1,34 @@
+ENTITY DEFINITIONS
+
+PER:
+A person entity refers to a named individual human being.
+Examples may include a person's full name, first name,
+surname, or other identifying personal name.
+
+ORG:
+An organization entity refers to a named organization,
+company, institution, political organization, team,
+government body, or similar organized entity.
+
+LOC:
+A location entity refers to a named geographical place,
+such as a city, country, state, district, village,
+region, landmark, or other geographical location.
+
+CARDINAL:
+A cardinal entity refers to a numerical expression
+annotated as CARDINAL in the TeluguNER dataset.
+
+TIME:
+A time entity refers to a temporal expression annotated
+as TIME in the TeluguNER dataset, including dates, years,
+days, months, clock times, durations, or other temporal
+expressions.
+
+OTH:
+An OTH entity refers to an entity annotated as OTH in
+the TeluguNER dataset.
+
+ORGANISM:
+An ORGANISM entity refers to an entity annotated as
+ORGANISM in the TeluguNER dataset.
