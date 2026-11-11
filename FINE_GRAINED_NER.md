@@ -40,6 +40,18 @@ Use Sarvam:
 NER_PROVIDER=sarvam python run_20_sentences_fine_grained.py
 ```
 
+Sarvam runs use three concurrent requests by default to reduce time spent
+waiting on network responses. If your Sarvam account rate-limits concurrent
+calls, lower the setting; increase it gradually if requests remain stable:
+
+```bash
+NER_PROVIDER=sarvam NER_MAX_CONCURRENCY=2 python run_200_sentences_fine_grained.py
+```
+
+`NER_MAX_CONCURRENCY=1` restores sequential processing. Results remain in test
+sentence order. Parallel requests can trigger provider throttling, so keep the
+setting within your account's rate limits.
+
 To process the first 50 test sentences and save a separate result file:
 
 ```bash

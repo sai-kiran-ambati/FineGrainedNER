@@ -1,0 +1,917 @@
+{
+  "summary": {
+    "dataset": "SampurNER",
+    "language": "te",
+    "provider": "sarvam",
+    "model": "sarvam-105b",
+    "level": "fine",
+    "split": "test",
+    "num_sentences": 20,
+    "labels": [
+      "art-broadcastprogram",
+      "art-film",
+      "art-music",
+      "art-other",
+      "art-painting",
+      "art-writtenart",
+      "building-airport",
+      "building-hospital",
+      "building-hotel",
+      "building-library",
+      "building-other",
+      "building-restaurant",
+      "building-sportsfacility",
+      "building-theater",
+      "event-attack/battle/war/militaryconflict",
+      "event-disaster",
+      "event-election",
+      "event-other",
+      "event-protest",
+      "event-sportsevent",
+      "location-GPE",
+      "location-bodiesofwater",
+      "location-island",
+      "location-mountain",
+      "location-other",
+      "location-park",
+      "location-road/railway/highway/transit",
+      "organization-company",
+      "organization-education",
+      "organization-government/governmentagency",
+      "organization-media/newspaper",
+      "organization-other",
+      "organization-politicalparty",
+      "organization-religion",
+      "organization-showorganization",
+      "organization-sportsleague",
+      "organization-sportsteam",
+      "other-astronomything",
+      "other-award",
+      "other-biologything",
+      "other-chemicalthing",
+      "other-currency",
+      "other-disease",
+      "other-educationaldegree",
+      "other-god",
+      "other-language",
+      "other-law",
+      "other-livingthing",
+      "other-medical",
+      "person-actor",
+      "person-artist/author",
+      "person-athlete",
+      "person-director",
+      "person-other",
+      "person-politician",
+      "person-scholar",
+      "person-soldier",
+      "product-airplane",
+      "product-car",
+      "product-food",
+      "product-game",
+      "product-other",
+      "product-ship",
+      "product-software",
+      "product-train",
+      "product-weapon"
+    ],
+    "micro_evaluation": {
+      "true_positives": 16,
+      "false_positives": 21,
+      "false_negatives": 20,
+      "precision": 0.43243243243243246,
+      "recall": 0.4444444444444444,
+      "f1": 0.4383561643835616
+    }
+  },
+  "sentences": [
+    {
+      "sentence_position": 1,
+      "sentence_id": "test-0",
+      "sentence": "వారు C-USA ప్లే లో సీజన్ను 14–19 9–9తో ముగించి ఏడవ స్థానంలో నిలిచారు.",
+      "gold_entities": [
+        {
+          "text": "C-USA ప్లే",
+          "label": "event-sportsevent",
+          "start_token": 2,
+          "end_token": 3
+        }
+      ],
+      "predictions": [
+        {
+          "text": "C-USA",
+          "start_token": 2,
+          "end_token": 2,
+          "label": "organization-sportsleague",
+          "candidate_id": "C006"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | True | organization-sportsleague |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |"
+    },
+    {
+      "sentence_position": 2,
+      "sentence_id": "test-1",
+      "sentence": "ఆస్ట్రో-హంగేరియన్ నేవీ రెండు తరగతుల రక్షిత క్రూయిజర్లను నిర్మించి నడిపింది.",
+      "gold_entities": [
+        {
+          "text": "ఆస్ట్రో-హంగేరియన్ నేవీ",
+          "label": "organization-other",
+          "start_token": 1,
+          "end_token": 2
+        }
+      ],
+      "predictions": [
+        {
+          "text": "ఆస్ట్రో-హంగేరియన్ నేవీ",
+          "start_token": 1,
+          "end_token": 2,
+          "label": "organization-government/governmentagency",
+          "candidate_id": "C002"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | True | organization-government/governmentagency |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |"
+    },
+    {
+      "sentence_position": 3,
+      "sentence_id": "test-2",
+      "sentence": "ఎలిన్ హిల్డర్బ్రాండ్ అమెరికన్ రచయిత్రి ఎక్కువగా ప్రేమ నవలలు రాస్తారు.",
+      "gold_entities": [
+        {
+          "text": "ఎలిన్ హిల్డర్బ్రాండ్",
+          "label": "person-artist/author",
+          "start_token": 1,
+          "end_token": 2
+        },
+        {
+          "text": "అమెరికన్",
+          "label": "location-GPE",
+          "start_token": 3,
+          "end_token": 3
+        }
+      ],
+      "predictions": [
+        {
+          "text": "ఎలిన్ హిల్డర్బ్రాండ్",
+          "start_token": 1,
+          "end_token": 2,
+          "label": "person-artist/author",
+          "candidate_id": "C002"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | True | person-artist/author |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |"
+    },
+    {
+      "sentence_position": 4,
+      "sentence_id": "test-3",
+      "sentence": "సినిడారియా అనేది జలచరాలు మరియు ఎక్కువగా సముద్ర వాతావరణాలలో ప్రత్యేకంగా కనిపించే జంతువుల సమూహం.",
+      "gold_entities": [
+        {
+          "text": "సినిడారియా",
+          "label": "other-livingthing",
+          "start_token": 1,
+          "end_token": 1
+        }
+      ],
+      "predictions": [
+        {
+          "text": "సినిడారియా",
+          "start_token": 1,
+          "end_token": 1,
+          "label": "other-biologything",
+          "candidate_id": "C001"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | True | other-biologything |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |"
+    },
+    {
+      "sentence_position": 5,
+      "sentence_id": "test-4",
+      "sentence": "అతను వెల్లింగ్బరో , నార్తాంప్టన్షైర్ లో జన్మించాడు అక్కడ అతను విక్టోరియా జూనియర్ స్కూల్ , వెస్ట్ఫీల్డ్ బాయ్స్ స్కూల్ మరియు సర్ క్రిస్టోఫర్ హాటన్ స్కూల్ లలో చదివాడు.",
+      "gold_entities": [
+        {
+          "text": "వెల్లింగ్బరో",
+          "label": "location-GPE",
+          "start_token": 2,
+          "end_token": 2
+        },
+        {
+          "text": "నార్తాంప్టన్షైర్",
+          "label": "location-GPE",
+          "start_token": 4,
+          "end_token": 4
+        },
+        {
+          "text": "విక్టోరియా జూనియర్ స్కూల్",
+          "label": "organization-education",
+          "start_token": 9,
+          "end_token": 11
+        },
+        {
+          "text": "వెస్ట్ఫీల్డ్ బాయ్స్ స్కూల్",
+          "label": "organization-education",
+          "start_token": 13,
+          "end_token": 15
+        },
+        {
+          "text": "సర్ క్రిస్టోఫర్ హాటన్ స్కూల్",
+          "label": "organization-education",
+          "start_token": 17,
+          "end_token": 20
+        }
+      ],
+      "predictions": [
+        {
+          "text": "వెల్లింగ్బరో",
+          "start_token": 2,
+          "end_token": 2,
+          "label": "location-gpe",
+          "candidate_id": "C006"
+        },
+        {
+          "text": "నార్తాంప్టన్షైర్",
+          "start_token": 4,
+          "end_token": 4,
+          "label": "location-gpe",
+          "candidate_id": "C016"
+        },
+        {
+          "text": "విక్టోరియా జూనియర్ స్కూల్",
+          "start_token": 9,
+          "end_token": 11,
+          "label": "organization-education",
+          "candidate_id": "C043"
+        },
+        {
+          "text": "వెస్ట్ఫీల్డ్ బాయ్స్ స్కూల్",
+          "start_token": 13,
+          "end_token": 15,
+          "label": "organization-education",
+          "candidate_id": "C063"
+        },
+        {
+          "text": "సర్ క్రిస్టోఫర్ హాటన్ స్కూల్",
+          "start_token": 17,
+          "end_token": 20,
+          "label": "organization-education",
+          "candidate_id": "C084"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | True | location-GPE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | True | location-GPE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | True | organization-education |\n| C044 | False | NONE |\n| C045 | False | NONE |\n| C046 | False | NONE |\n| C047 | False | NONE |\n| C048 | False | NONE |\n| C049 | False | NONE |\n| C050 | False | NONE |\n| C051 | False | NONE |\n| C052 | False | NONE |\n| C053 | False | NONE |\n| C054 | False | NONE |\n| C055 | False | NONE |\n| C056 | False | NONE |\n| C057 | False | NONE |\n| C058 | False | NONE |\n| C059 | False | NONE |\n| C060 | False | NONE |\n| C061 | False | NONE |\n| C062 | False | NONE |\n| C063 | True | organization-education |\n| C064 | False | NONE |\n| C065 | False | NONE |\n| C066 | False | NONE |\n| C067 | False | NONE |\n| C068 | False | NONE |\n| C069 | False | NONE |\n| C070 | False | NONE |\n| C071 | False | NONE |\n| C072 | False | NONE |\n| C073 | False | NONE |\n| C074 | False | NONE |\n| C075 | False | NONE |\n| C076 | False | NONE |\n| C077 | False | NONE |\n| C078 | False | NONE |\n| C079 | False | NONE |\n| C080 | False | NONE |\n| C081 | False | NONE |\n| C082 | False | NONE |\n| C083 | False | NONE |\n| C084 | True | organization-education |\n| C085 | False | NONE |\n| C086 | False | NONE |\n| C087 | False | NONE |\n| C088 | False | NONE |\n| C089 | False | NONE |\n| C090 | False | NONE |\n| C091 | False | NONE |\n| C092 | False | NONE |\n| C093 | False | NONE |\n| C094 | False | NONE |\n| C095 | False | NONE |\n| C096 | False | NONE |\n| C097 | False | NONE |\n| C098 | False | NONE |\n| C099 | False | NONE |\n| C100 | False | NONE |"
+    },
+    {
+      "sentence_position": 6,
+      "sentence_id": "test-5",
+      "sentence": "1979 క్రికెట్ ప్రపంచ కప్ లో కెనడా తో జరిగిన మ్యాచ్ లో ఇంగ్లాండ్ జట్టు ODI చరిత్రలో అత్యల్ప మ్యాచ్ స్కోరు 91.",
+      "gold_entities": [
+        {
+          "text": "క్రికెట్ ప్రపంచ కప్",
+          "label": "event-sportsevent",
+          "start_token": 2,
+          "end_token": 4
+        },
+        {
+          "text": "కెనడా",
+          "label": "organization-sportsteam",
+          "start_token": 6,
+          "end_token": 6
+        },
+        {
+          "text": "ఇంగ్లాండ్",
+          "label": "organization-sportsteam",
+          "start_token": 11,
+          "end_token": 11
+        }
+      ],
+      "predictions": [
+        {
+          "text": "1979 క్రికెట్ ప్రపంచ కప్",
+          "start_token": 1,
+          "end_token": 4,
+          "label": "event-sportsevent",
+          "candidate_id": "C004"
+        },
+        {
+          "text": "కెనడా",
+          "start_token": 6,
+          "end_token": 6,
+          "label": "location-gpe",
+          "candidate_id": "C026"
+        },
+        {
+          "text": "ఇంగ్లాండ్",
+          "start_token": 11,
+          "end_token": 11,
+          "label": "location-gpe",
+          "candidate_id": "C051"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | True | event-sportsevent |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | True | location-GPE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |\n| C046 | False | NONE |\n| C047 | False | NONE |\n| C048 | False | NONE |\n| C049 | False | NONE |\n| C050 | False | NONE |\n| C051 | True | location-GPE |\n| C052 | False | NONE |\n| C053 | False | NONE |\n| C054 | False | NONE |\n| C055 | False | NONE |\n| C056 | False | NONE |\n| C057 | False | NONE |\n| C058 | False | NONE |\n| C059 | False | NONE |\n| C060 | False | NONE |\n| C061 | False | NONE |\n| C062 | False | NONE |\n| C063 | False | NONE |\n| C064 | False | NONE |\n| C065 | False | NONE |\n| C066 | False | NONE |\n| C067 | False | NONE |\n| C068 | False | NONE |\n| C069 | False | NONE |\n| C070 | False | NONE |\n| C071 | False | NONE |\n| C072 | False | NONE |\n| C073 | False | NONE |\n| C074 | False | NONE |\n| C075 | False | NONE |\n| C076 | False | NONE |\n| C077 | False | NONE |\n| C078 | False | NONE |\n| C079 | False | NONE |\n| C080 | False | NONE |"
+    },
+    {
+      "sentence_position": 7,
+      "sentence_id": "test-6",
+      "sentence": "బెన్ క్రూచాన్ శ్రేణి ద్వారా కొంతవరకు దాగి ఉంటుంది ఇది సాధారణంగా దాని పొరుగున ఉన్న బీన్ యునైచ్ తో కలిసి ఎక్కడం జరుగుతుంది.",
+      "gold_entities": [
+        {
+          "text": "బెన్ క్రూచాన్",
+          "label": "location-mountain",
+          "start_token": 1,
+          "end_token": 2
+        },
+        {
+          "text": "బీన్ యునైచ్",
+          "label": "location-mountain",
+          "start_token": 13,
+          "end_token": 14
+        }
+      ],
+      "predictions": [
+        {
+          "text": "బెన్ క్రూచాన్ శ్రేణి",
+          "start_token": 1,
+          "end_token": 3,
+          "label": "location-mountain",
+          "candidate_id": "C003"
+        },
+        {
+          "text": "బీన్ యునైచ్",
+          "start_token": 13,
+          "end_token": 14,
+          "label": "location-mountain",
+          "candidate_id": "C062"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | True | location-mountain |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |\n| C046 | False | NONE |\n| C047 | False | NONE |\n| C048 | False | NONE |\n| C049 | False | NONE |\n| C050 | False | NONE |\n| C051 | False | NONE |\n| C052 | False | NONE |\n| C053 | False | NONE |\n| C054 | False | NONE |\n| C055 | False | NONE |\n| C056 | False | NONE |\n| C057 | False | NONE |\n| C058 | False | NONE |\n| C059 | False | NONE |\n| C060 | False | NONE |\n| C061 | False | NONE |\n| C062 | True | location-mountain |\n| C063 | False | NONE |\n| C064 | False | NONE |\n| C065 | False | NONE |\n| C066 | False | NONE |\n| C067 | False | NONE |\n| C068 | False | NONE |\n| C069 | False | NONE |\n| C070 | False | NONE |\n| C071 | False | NONE |\n| C072 | False | NONE |\n| C073 | False | NONE |\n| C074 | False | NONE |\n| C075 | False | NONE |\n| C076 | False | NONE |\n| C077 | False | NONE |\n| C078 | False | NONE |\n| C079 | False | NONE |\n| C080 | False | NONE |"
+    },
+    {
+      "sentence_position": 8,
+      "sentence_id": "test-7",
+      "sentence": "బ్లావాట్స్కీ జ్ఞానం విజ్ఞానం మరియు వైద్య అభ్యాసాన్ని అభివృద్ధి చేయడానికి ప్రకృతి యొక్క క్షుద్ర వైపును ఉపయోగించడం కోసం అతని వాదనకు ఈ పుస్తకాన్ని ప్రారంభించవచ్చు.",
+      "gold_entities": [],
+      "predictions": [
+        {
+          "text": "బ్లావాట్స్కీ",
+          "start_token": 1,
+          "end_token": 1,
+          "label": "person-artist/author",
+          "candidate_id": "C001"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | True | person-artist/author |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |\n| C046 | False | NONE |\n| C047 | False | NONE |\n| C048 | False | NONE |\n| C049 | False | NONE |\n| C050 | False | NONE |\n| C051 | False | NONE |\n| C052 | False | NONE |\n| C053 | False | NONE |\n| C054 | False | NONE |\n| C055 | False | NONE |\n| C056 | False | NONE |\n| C057 | False | NONE |\n| C058 | False | NONE |\n| C059 | False | NONE |\n| C060 | False | NONE |\n| C061 | False | NONE |\n| C062 | False | NONE |\n| C063 | False | NONE |\n| C064 | False | NONE |\n| C065 | False | NONE |\n| C066 | False | NONE |\n| C067 | False | NONE |\n| C068 | False | NONE |\n| C069 | False | NONE |\n| C070 | False | NONE |\n| C071 | False | NONE |\n| C072 | False | NONE |\n| C073 | False | NONE |\n| C074 | False | NONE |\n| C075 | False | NONE |\n| C076 | False | NONE |\n| C077 | False | NONE |\n| C078 | False | NONE |\n| C079 | False | NONE |\n| C080 | False | NONE |\n| C081 | False | NONE |\n| C082 | False | NONE |\n| C083 | False | NONE |\n| C084 | False | NONE |\n| C085 | False | NONE |"
+    },
+    {
+      "sentence_position": 9,
+      "sentence_id": "test-8",
+      "sentence": "ప్రయోగాత్మక GPX1 లోపం వృద్ధాప్యం యొక్క కొన్ని అంశాలను పెంచుతుంది అవి ఎండోథెలియల్ పనిచేయకపోవడం వాస్కులర్ పునర్నిర్మాణం మరియు హృదయనాళ కణజాలంలో ల్యూకోసైట్ల దాడి.",
+      "gold_entities": [],
+      "predictions": [
+        {
+          "text": "GPX1 లోపం",
+          "start_token": 2,
+          "end_token": 3,
+          "label": "other-disease",
+          "candidate_id": "C007"
+        },
+        {
+          "text": "వృద్ధాప్యం",
+          "start_token": 4,
+          "end_token": 4,
+          "label": "other-biologything",
+          "candidate_id": "C016"
+        },
+        {
+          "text": "ఎండోథెలియల్ పనిచేయకపోవడం",
+          "start_token": 10,
+          "end_token": 11,
+          "label": "other-disease",
+          "candidate_id": "C047"
+        },
+        {
+          "text": "వాస్కులర్ పునర్నిర్మాణం",
+          "start_token": 12,
+          "end_token": 13,
+          "label": "other-biologything",
+          "candidate_id": "C057"
+        },
+        {
+          "text": "ల్యూకోసైట్ల దాడి.",
+          "start_token": 17,
+          "end_token": 18,
+          "label": "other-biologything",
+          "candidate_id": "C079"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 5,
+        "false_negatives": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | True | other-disease |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | True | other-biologything |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |\n| C046 | False | NONE |\n| C047 | True | other-disease |\n| C048 | False | NONE |\n| C049 | False | NONE |\n| C050 | False | NONE |\n| C051 | False | NONE |\n| C052 | False | NONE |\n| C053 | False | NONE |\n| C054 | False | NONE |\n| C055 | False | NONE |\n| C056 | False | NONE |\n| C057 | True | other-biologything |\n| C058 | False | NONE |\n| C059 | False | NONE |\n| C060 | False | NONE |\n| C061 | False | NONE |\n| C062 | False | NONE |\n| C063 | False | NONE |\n| C064 | False | NONE |\n| C065 | False | NONE |\n| C066 | False | NONE |\n| C067 | False | NONE |\n| C068 | False | NONE |\n| C069 | False | NONE |\n| C070 | False | NONE |\n| C071 | False | NONE |\n| C072 | False | NONE |\n| C073 | False | NONE |\n| C074 | False | NONE |\n| C075 | False | NONE |\n| C076 | False | NONE |\n| C077 | False | NONE |\n| C078 | False | NONE |\n| C079 | True | other-biologything |\n| C080 | False | NONE |"
+    },
+    {
+      "sentence_position": 10,
+      "sentence_id": "test-9",
+      "sentence": "లారెన్స్ తనకు నగదు ఇచ్చారని ఆరోపించగా స్టీఫెన్స్ తన ప్రాణాలకు ముప్పు ఉందని ఆరోపించాడు.",
+      "gold_entities": [
+        {
+          "text": "స్టీఫెన్స్",
+          "label": "person-other",
+          "start_token": 6,
+          "end_token": 6
+        }
+      ],
+      "predictions": [
+        {
+          "text": "లారెన్స్",
+          "start_token": 1,
+          "end_token": 1,
+          "label": "person-other",
+          "candidate_id": "C001"
+        },
+        {
+          "text": "స్టీఫెన్స్",
+          "start_token": 6,
+          "end_token": 6,
+          "label": "person-other",
+          "candidate_id": "C026"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "raw_output": "\n| C001 | True | person-other |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | True | person-other |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |"
+    },
+    {
+      "sentence_position": 11,
+      "sentence_id": "test-10",
+      "sentence": "గ్లుటామైన్ సింథటేజ్ నైట్రేట్ తగ్గింపు అమైనో ఆమ్లం క్షీణత మరియు ఫోటోరెస్పిరేషన్ ద్వారా ఉత్పత్తి చేయబడిన అమ్మోనియా ను ఉపయోగిస్తుంది.",
+      "gold_entities": [
+        {
+          "text": "గ్లుటామైన్ సింథటేజ్",
+          "label": "other-biologything",
+          "start_token": 1,
+          "end_token": 2
+        },
+        {
+          "text": "అమైనో ఆమ్లం",
+          "label": "other-biologything",
+          "start_token": 5,
+          "end_token": 6
+        },
+        {
+          "text": "అమ్మోనియా",
+          "label": "other-biologything",
+          "start_token": 13,
+          "end_token": 13
+        }
+      ],
+      "predictions": [
+        {
+          "text": "గ్లుటామైన్ సింథటేజ్",
+          "start_token": 1,
+          "end_token": 2,
+          "label": "other-biologything",
+          "candidate_id": "C002"
+        },
+        {
+          "text": "నైట్రేట్",
+          "start_token": 3,
+          "end_token": 3,
+          "label": "other-chemicalthing",
+          "candidate_id": "C011"
+        },
+        {
+          "text": "అమైనో ఆమ్లం",
+          "start_token": 5,
+          "end_token": 6,
+          "label": "other-biologything",
+          "candidate_id": "C022"
+        },
+        {
+          "text": "ఫోటోరెస్పిరేషన్",
+          "start_token": 9,
+          "end_token": 9,
+          "label": "other-biologything",
+          "candidate_id": "C041"
+        },
+        {
+          "text": "అమ్మోనియా",
+          "start_token": 13,
+          "end_token": 13,
+          "label": "other-chemicalthing",
+          "candidate_id": "C060"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 2,
+        "false_positives": 3,
+        "false_negatives": 1,
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "f1": 0.5
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | True | other-biologything |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | True | other-chemicalthing |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | True | other-biologything |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | True | other-biologything |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |\n| C046 | False | NONE |\n| C047 | False | NONE |\n| C048 | False | NONE |\n| C049 | False | NONE |\n| C050 | False | NONE |\n| C051 | False | NONE |\n| C052 | False | NONE |\n| C053 | False | NONE |\n| C054 | False | NONE |\n| C055 | False | NONE |\n| C056 | False | NONE |\n| C057 | False | NONE |\n| C058 | False | NONE |\n| C059 | False | NONE |\n| C060 | True | other-chemicalthing |\n| C061 | False | NONE |\n| C062 | False | NONE |\n| C063 | False | NONE |\n| C064 | False | NONE |\n| C065 | False | NONE |"
+    },
+    {
+      "sentence_position": 12,
+      "sentence_id": "test-11",
+      "sentence": "Wii U యొక్క మొదటి విడుదల సంవత్సరంలో Wii U తో పాటు సవరించిన Wii మోడల్ మరియు Wii మినీ లను అమ్మడం కొనసాగించింది.",
+      "gold_entities": [
+        {
+          "text": "Wii U",
+          "label": "product-other",
+          "start_token": 1,
+          "end_token": 2
+        },
+        {
+          "text": "Wii U",
+          "label": "product-other",
+          "start_token": 7,
+          "end_token": 8
+        },
+        {
+          "text": "Wii మోడల్",
+          "label": "product-other",
+          "start_token": 12,
+          "end_token": 13
+        },
+        {
+          "text": "Wii మినీ",
+          "label": "product-other",
+          "start_token": 15,
+          "end_token": 16
+        }
+      ],
+      "predictions": [
+        {
+          "text": "Wii U",
+          "start_token": 1,
+          "end_token": 2,
+          "label": "product-other",
+          "candidate_id": "C002"
+        },
+        {
+          "text": "Wii U",
+          "start_token": 7,
+          "end_token": 8,
+          "label": "product-other",
+          "candidate_id": "C032"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 2,
+        "false_positives": 0,
+        "false_negatives": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | True | product-other |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | True | product-other |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |\n| C046 | False | NONE |\n| C047 | False | NONE |\n| C048 | False | NONE |\n| C049 | False | NONE |\n| C050 | False | NONE |\n| C051 | False | NONE |\n| C052 | False | NONE |\n| C053 | False | NONE |\n"
+    },
+    {
+      "sentence_position": 13,
+      "sentence_id": "test-12",
+      "sentence": "కెన్యన్ 1829లో మేనూత్ సెమినరీ లో ప్రవేశించాడు – కాథలిక్ విముక్తి సంవత్సరంలో.",
+      "gold_entities": [
+        {
+          "text": "కెన్యన్",
+          "label": "person-politician",
+          "start_token": 1,
+          "end_token": 1
+        },
+        {
+          "text": "మేనూత్ సెమినరీ",
+          "label": "organization-education",
+          "start_token": 3,
+          "end_token": 4
+        },
+        {
+          "text": "కాథలిక్ విముక్తి",
+          "label": "event-other",
+          "start_token": 8,
+          "end_token": 9
+        }
+      ],
+      "predictions": [
+        {
+          "text": "కెన్యన్",
+          "start_token": 1,
+          "end_token": 1,
+          "label": "person-other",
+          "candidate_id": "C001"
+        },
+        {
+          "text": "మేనూత్ సెమినరీ",
+          "start_token": 3,
+          "end_token": 4,
+          "label": "organization-education",
+          "candidate_id": "C012"
+        },
+        {
+          "text": "కాథలిక్ విముక్తి",
+          "start_token": 8,
+          "end_token": 9,
+          "label": "event-other",
+          "candidate_id": "C036"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 2,
+        "false_positives": 1,
+        "false_negatives": 1,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666
+      },
+      "raw_output": "\n| C001 | True | person-other |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | True | organization-education |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | True | event-other |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |"
+    },
+    {
+      "sentence_position": 14,
+      "sentence_id": "test-13",
+      "sentence": "డబ్లిన్ వెస్టన్ విమానాశ్రయం మరియు ఇతర చిన్న సౌకర్యాలు అనేక రకాల హెలికాప్టర్ ఆపరేటర్ల సేవలను కూడా అందిస్తోంది మరియు సైన్యం మరియు కొన్ని రాష్ట్ర సేవలు సమీపంలోని కేస్మెంట్ ఏరోడ్రోమ్ ను ఉపయోగిస్తాయి.",
+      "gold_entities": [
+        {
+          "text": "డబ్లిన్",
+          "label": "location-GPE",
+          "start_token": 1,
+          "end_token": 1
+        },
+        {
+          "text": "వెస్టన్ విమానాశ్రయం",
+          "label": "building-airport",
+          "start_token": 2,
+          "end_token": 3
+        },
+        {
+          "text": "కేస్మెంట్ ఏరోడ్రోమ్",
+          "label": "building-airport",
+          "start_token": 22,
+          "end_token": 23
+        }
+      ],
+      "predictions": [
+        {
+          "text": "డబ్లిన్ వెస్టన్ విమానాశ్రయం",
+          "start_token": 1,
+          "end_token": 3,
+          "label": "building-airport",
+          "candidate_id": "C003"
+        },
+        {
+          "text": "కేస్మెంట్ ఏరోడ్రోమ్",
+          "start_token": 22,
+          "end_token": 23,
+          "label": "building-airport",
+          "candidate_id": "C107"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 2,
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1": 0.4
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | True | building-airport |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | False | NONE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |\n| C046 | False | NONE |\n| C047 | False | NONE |\n| C048 | False | NONE |\n| C049 | False | NONE |\n| C050 | False | NONE |\n| C051 | False | NONE |\n| C052 | False | NONE |\n| C053 | False | NONE |\n| C054 | False | NONE |\n| C055 | False | NONE |\n| C056 | False | NONE |\n| C057 | False | NONE |\n| C058 | False | NONE |\n| C059 | False | NONE |\n| C060 | False | NONE |\n| C061 | False | NONE |\n| C062 | False | NONE |\n| C063 | False | NONE |\n| C064 | False | NONE |\n| C065 | False | NONE |\n| C066 | False | NONE |\n| C067 | False | NONE |\n| C068 | False | NONE |\n| C069 | False | NONE |\n| C070 | False | NONE |\n| C071 | False | NONE |\n| C072 | False | NONE |\n| C073 | False | NONE |\n| C074 | False | NONE |\n| C075 | False | NONE |\n| C076 | False | NONE |\n| C077 | False | NONE |\n| C078 | False | NONE |\n| C079 | False | NONE |\n| C080 | False | NONE |\n| C081 | False | NONE |\n| C082 | False | NONE |\n| C083 | False | NONE |\n| C084 | False | NONE |\n| C085 | False | NONE |\n| C086 | False | NONE |\n| C087 | False | NONE |\n| C088 | False | NONE |\n| C089 | False | NONE |\n| C090 | False | NONE |\n| C091 | False | NONE |\n| C092 | False | NONE |\n| C093 | False | NONE |\n| C094 | False | NONE |\n| C095 | False | NONE |\n| C096 | False | NONE |\n| C097 | False | NONE |\n| C098 | False | NONE |\n| C099 | False | NONE |\n| C100 | False | NONE |\n| C101 | False | NONE |\n| C102 | False | NONE |\n| C103 | False | NONE |\n| C104 | False | NONE |\n| C105 | False | NONE |\n| C106 | False | NONE |\n| C107 | True | building-airport |\n| C108 | False | NONE |\n| C109 | False | NONE |\n| C110 | False | NONE |\n| C111 | False | NONE |\n| C112 | False | NONE |\n| C113 | False | NONE |\n| C114 | False | NONE |\n| C115 | False | NONE |"
+    },
+    {
+      "sentence_position": 15,
+      "sentence_id": "test-14",
+      "sentence": "అతను కిమ్ ఫౌలీ మరియు BMX బాండిట్స్ ( బ్యాండ్ ) రిసీవర్ రికార్డ్స్ ' ఆల్బమ్ `` హిడెన్ అజెండా ఎట్ ది థర్టీన్త్ నాట్ `` ను నిర్మించాడు.",
+      "gold_entities": [
+        {
+          "text": "కిమ్ ఫౌలీ",
+          "label": "person-artist/author",
+          "start_token": 2,
+          "end_token": 3
+        },
+        {
+          "text": "BMX బాండిట్స్",
+          "label": "organization-showorganization",
+          "start_token": 5,
+          "end_token": 6
+        },
+        {
+          "text": "రిసీవర్ రికార్డ్స్",
+          "label": "organization-company",
+          "start_token": 10,
+          "end_token": 11
+        },
+        {
+          "text": "హిడెన్ అజెండా ఎట్ ది థర్టీన్త్ నాట్",
+          "label": "art-music",
+          "start_token": 15,
+          "end_token": 20
+        }
+      ],
+      "predictions": [],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": ""
+    },
+    {
+      "sentence_position": 16,
+      "sentence_id": "test-15",
+      "sentence": "చాలా మంది పురుషులను వారి కుటుంబాల నుండి వేరు చేసి BC లోకి పంపారు.",
+      "gold_entities": [],
+      "predictions": [
+        {
+          "text": "BC",
+          "start_token": 9,
+          "end_token": 9,
+          "label": "location-gpe",
+          "candidate_id": "C040"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |\n| C036 | False | NONE |\n| C037 | False | NONE |\n| C038 | False | NONE |\n| C039 | False | NONE |\n| C040 | True | location-GPE |\n| C041 | False | NONE |\n| C042 | False | NONE |\n| C043 | False | NONE |\n| C044 | False | NONE |\n| C045 | False | NONE |"
+    },
+    {
+      "sentence_position": 17,
+      "sentence_id": "test-16",
+      "sentence": "ఆమె కల్పనలను కూడా రాసింది మరియు ఆమె రచనలకు అవార్డులు వచ్చాయి.",
+      "gold_entities": [],
+      "predictions": [],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |"
+    },
+    {
+      "sentence_position": 18,
+      "sentence_id": "test-17",
+      "sentence": "ఇంకా , SFO సహేతుకమైన చట్టపరమైన ఖర్చులను చెల్లించడానికి ముందుకొచ్చింది.",
+      "gold_entities": [
+        {
+          "text": "SFO",
+          "label": "organization-other",
+          "start_token": 3,
+          "end_token": 3
+        }
+      ],
+      "predictions": [
+        {
+          "text": "SFO",
+          "start_token": 3,
+          "end_token": 3,
+          "label": "building-airport",
+          "candidate_id": "C011"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | False | NONE |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | True | building-airport |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |"
+    },
+    {
+      "sentence_position": 19,
+      "sentence_id": "test-18",
+      "sentence": "టీం ఓర్ 7–1 విజయానికి దారిలో నాలుగు సార్లు గోల్ చేసింది.",
+      "gold_entities": [
+        {
+          "text": "టీం ఓర్",
+          "label": "organization-sportsteam",
+          "start_token": 1,
+          "end_token": 2
+        }
+      ],
+      "predictions": [
+        {
+          "text": "టీం ఓర్",
+          "start_token": 1,
+          "end_token": 2,
+          "label": "organization-sportsteam",
+          "candidate_id": "C002"
+        }
+      ],
+      "evaluation": {
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "raw_output": "\n| C001 | False | NONE |\n| C002 | True | organization-sportsteam |\n| C003 | False | NONE |\n| C004 | False | NONE |\n| C005 | False | NONE |\n| C006 | False | NONE |\n| C007 | False | NONE |\n| C008 | False | NONE |\n| C009 | False | NONE |\n| C010 | False | NONE |\n| C011 | False | NONE |\n| C012 | False | NONE |\n| C013 | False | NONE |\n| C014 | False | NONE |\n| C015 | False | NONE |\n| C016 | False | NONE |\n| C017 | False | NONE |\n| C018 | False | NONE |\n| C019 | False | NONE |\n| C020 | False | NONE |\n| C021 | False | NONE |\n| C022 | False | NONE |\n| C023 | False | NONE |\n| C024 | False | NONE |\n| C025 | False | NONE |\n| C026 | False | NONE |\n| C027 | False | NONE |\n| C028 | False | NONE |\n| C029 | False | NONE |\n| C030 | False | NONE |\n| C031 | False | NONE |\n| C032 | False | NONE |\n| C033 | False | NONE |\n| C034 | False | NONE |\n| C035 | False | NONE |"
+    },
+    {
+      "sentence_position": 20,
+      "sentence_id": "test-19",
+      "sentence": "అప్పటి నుండి ఆమె నిరాశ్రయులైన రోగులతో పనిచేసింది మరియు r MedAmerica కు మేనేజ్మెంట్ కన్సల్టెంట్ పదవిని కలిగి ఉంది.",
+      "gold_entities": [
+        {
+          "text": "r MedAmerica",
+          "label": "organization-company",
+          "start_token": 8,
+          "end_token": 9
+        }
+      ],
+      "predictions": [],
+      "evaluation": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "raw_output": ""
+    }
+  ]
+}

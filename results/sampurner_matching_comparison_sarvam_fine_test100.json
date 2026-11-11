@@ -1,0 +1,3219 @@
+{
+  "summary": {
+    "dataset": "SampurNER",
+    "language": "te",
+    "provider": "sarvam",
+    "model": "sarvam-105b",
+    "level": "fine",
+    "split": "test",
+    "num_sentences": 100,
+    "request_concurrency": 3,
+    "labels": [
+      "art-broadcastprogram",
+      "art-film",
+      "art-music",
+      "art-other",
+      "art-painting",
+      "art-writtenart",
+      "building-airport",
+      "building-hospital",
+      "building-hotel",
+      "building-library",
+      "building-other",
+      "building-restaurant",
+      "building-sportsfacility",
+      "building-theater",
+      "event-attack/battle/war/militaryconflict",
+      "event-disaster",
+      "event-election",
+      "event-other",
+      "event-protest",
+      "event-sportsevent",
+      "location-GPE",
+      "location-bodiesofwater",
+      "location-island",
+      "location-mountain",
+      "location-other",
+      "location-park",
+      "location-road/railway/highway/transit",
+      "organization-company",
+      "organization-education",
+      "organization-government/governmentagency",
+      "organization-media/newspaper",
+      "organization-other",
+      "organization-politicalparty",
+      "organization-religion",
+      "organization-showorganization",
+      "organization-sportsleague",
+      "organization-sportsteam",
+      "other-astronomything",
+      "other-award",
+      "other-biologything",
+      "other-chemicalthing",
+      "other-currency",
+      "other-disease",
+      "other-educationaldegree",
+      "other-god",
+      "other-language",
+      "other-law",
+      "other-livingthing",
+      "other-medical",
+      "person-actor",
+      "person-artist/author",
+      "person-athlete",
+      "person-director",
+      "person-other",
+      "person-politician",
+      "person-scholar",
+      "person-soldier",
+      "product-airplane",
+      "product-car",
+      "product-food",
+      "product-game",
+      "product-other",
+      "product-ship",
+      "product-software",
+      "product-train",
+      "product-weapon"
+    ],
+    "scoring": "Exact, BIO token-wise, and one-to-one partial matching",
+    "micro_evaluation": {
+      "true_positives": 110,
+      "false_positives": 72,
+      "false_negatives": 101,
+      "precision": 0.6043956043956044,
+      "recall": 0.5213270142180095,
+      "f1": 0.5597964376590332
+    },
+    "matching_approaches": {
+      "token_wise": {
+        "true_positives": 202,
+        "false_positives": 107,
+        "false_negatives": 169,
+        "precision": 0.6537216828478964,
+        "recall": 0.5444743935309974,
+        "f1": 0.5941176470588236,
+        "token_accuracy": 0.863031914893617,
+        "tokens": 1504
+      },
+      "entity_wise": {
+        "true_positives": 110,
+        "false_positives": 72,
+        "false_negatives": 101,
+        "precision": 0.6043956043956044,
+        "recall": 0.5213270142180095,
+        "f1": 0.5597964376590332
+      },
+      "partial": {
+        "true_positives": 127,
+        "false_positives": 55,
+        "false_negatives": 84,
+        "precision": 0.6978021978021978,
+        "recall": 0.6018957345971564,
+        "f1": 0.6463104325699744
+      }
+    }
+  },
+  "sentences": [
+    {
+      "sentence_id": "test-0",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.8181818181818182,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-1",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.75,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-2",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "token_accuracy": 0.875,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "sentence_id": "test-3",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.9090909090909091,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-4",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 12,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 22
+        },
+        "entity_wise": {
+          "true_positives": 5,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 5,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-5",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 4,
+          "false_negatives": 2,
+          "precision": 0.42857142857142855,
+          "recall": 0.6,
+          "f1": 0.5,
+          "token_accuracy": 0.7777777777777778,
+          "tokens": 18
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "sentence_id": "test-6",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 4,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.888888888888889,
+          "token_accuracy": 0.9444444444444444,
+          "tokens": 18
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-7",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.9473684210526315,
+          "tokens": 19
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-8",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.9444444444444444,
+          "tokens": 18
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-9",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "token_accuracy": 0.9090909090909091,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "sentence_id": "test-10",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 5,
+          "false_negatives": 3,
+          "precision": 0.2857142857142857,
+          "recall": 0.4,
+          "f1": 0.3333333333333333,
+          "token_accuracy": 0.6666666666666666,
+          "tokens": 15
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 4,
+          "false_negatives": 2,
+          "precision": 0.2,
+          "recall": 0.3333333333333333,
+          "f1": 0.25
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 4,
+          "false_negatives": 2,
+          "precision": 0.2,
+          "recall": 0.3333333333333333,
+          "f1": 0.25
+        }
+      }
+    },
+    {
+      "sentence_id": "test-11",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 7,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "token_accuracy": 0.9473684210526315,
+          "tokens": 19
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75
+        },
+        "partial": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-12",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 4,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8000000000000002,
+          "token_accuracy": 0.9,
+          "tokens": 10
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "sentence_id": "test-13",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1": 0.6,
+          "token_accuracy": 0.92,
+          "tokens": 25
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8
+        }
+      }
+    },
+    {
+      "sentence_id": "test-14",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 4,
+          "false_positives": 2,
+          "false_negatives": 8,
+          "precision": 0.6666666666666666,
+          "recall": 0.3333333333333333,
+          "f1": 0.4444444444444444,
+          "token_accuracy": 0.6521739130434783,
+          "tokens": 23
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285715
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285715
+        }
+      }
+    },
+    {
+      "sentence_id": "test-15",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.9090909090909091,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-16",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 9
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-17",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.875,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-18",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 9
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-19",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.8666666666666667,
+          "tokens": 15
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-20",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 5,
+          "false_negatives": 6,
+          "precision": 0.375,
+          "recall": 0.3333333333333333,
+          "f1": 0.35294117647058826,
+          "token_accuracy": 0.7692307692307693,
+          "tokens": 26
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 3,
+          "false_negatives": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4000000000000001
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 3,
+          "false_negatives": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4000000000000001
+        }
+      }
+    },
+    {
+      "sentence_id": "test-21",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 4,
+          "false_positives": 3,
+          "false_negatives": 3,
+          "precision": 0.5714285714285714,
+          "recall": 0.5714285714285714,
+          "f1": 0.5714285714285714,
+          "token_accuracy": 0.7777777777777778,
+          "tokens": 18
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 3,
+          "false_negatives": 2,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444445
+        },
+        "partial": {
+          "true_positives": 4,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.888888888888889
+        }
+      }
+    },
+    {
+      "sentence_id": "test-22",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "token_accuracy": 0.9230769230769231,
+          "tokens": 13
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        }
+      }
+    },
+    {
+      "sentence_id": "test-23",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.7391304347826086,
+          "tokens": 23
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-24",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.95,
+          "tokens": 20
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-25",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4,
+          "token_accuracy": 0.92,
+          "tokens": 25
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-26",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.875,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-27",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.5714285714285714,
+          "tokens": 14
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-28",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.7368421052631579,
+          "tokens": 19
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-29",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 5,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091,
+          "token_accuracy": 0.9230769230769231,
+          "tokens": 13
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        }
+      }
+    },
+    {
+      "sentence_id": "test-30",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.8181818181818182,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-31",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.8181818181818182,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-32",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 3,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1": 0.6,
+          "token_accuracy": 0.8,
+          "tokens": 15
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4
+        }
+      }
+    },
+    {
+      "sentence_id": "test-33",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.8695652173913043,
+          "tokens": 23
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-34",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.8,
+          "tokens": 10
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-35",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 7,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.7307692307692307,
+          "tokens": 26
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-36",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 8,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 23
+        },
+        "entity_wise": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-37",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.75,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-38",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-39",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-40",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 5,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "f1": 0.7692307692307692,
+          "token_accuracy": 0.8823529411764706,
+          "tokens": 17
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-41",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 22
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-42",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 12,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.6470588235294118,
+          "tokens": 34
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 7,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 7,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-43",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 7
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-44",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.5,
+          "tokens": 4
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-45",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 13,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.43478260869565216,
+          "tokens": 23
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-46",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 5,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-47",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 3
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-48",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-49",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 10
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-50",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 14
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-51",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 5,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 19
+        },
+        "entity_wise": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-52",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-53",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 24
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-54",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 5,
+          "false_positives": 5,
+          "false_negatives": 5,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "token_accuracy": 0.7058823529411765,
+          "tokens": 17
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 3,
+          "false_negatives": 3,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 3,
+          "false_negatives": 3,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        }
+      }
+    },
+    {
+      "sentence_id": "test-55",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 6,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 21
+        },
+        "entity_wise": {
+          "true_positives": 5,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 5,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-56",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 9,
+          "false_negatives": 7,
+          "precision": 0.1,
+          "recall": 0.125,
+          "f1": 0.11111111111111112,
+          "token_accuracy": 0.5,
+          "tokens": 18
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "sentence_id": "test-57",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.75,
+          "tokens": 4
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-58",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 7,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.6111111111111112,
+          "tokens": 18
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-59",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.782608695652174,
+          "tokens": 23
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-60",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.7692307692307693,
+          "tokens": 13
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-61",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 13
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-62",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 12
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-63",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 13
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-64",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 17
+        },
+        "entity_wise": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-65",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 6,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 14
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-66",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 5,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1": 0.8333333333333333,
+          "token_accuracy": 0.8947368421052632,
+          "tokens": 19
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "sentence_id": "test-67",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 12
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-68",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 6
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-69",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 3,
+          "false_negatives": 1,
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "f1": 0.5,
+          "token_accuracy": 0.7894736842105263,
+          "tokens": 19
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        }
+      }
+    },
+    {
+      "sentence_id": "test-70",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 9,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 28
+        },
+        "entity_wise": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-71",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 12
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-72",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 7,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.875,
+          "recall": 0.7777777777777778,
+          "f1": 0.823529411764706,
+          "token_accuracy": 0.8947368421052632,
+          "tokens": 19
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75
+        },
+        "partial": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-73",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.6,
+          "tokens": 5
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-74",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 2,
+          "false_negatives": 4,
+          "precision": 0.6,
+          "recall": 0.42857142857142855,
+          "f1": 0.5,
+          "token_accuracy": 0.8857142857142857,
+          "tokens": 35
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 2,
+          "false_negatives": 3,
+          "precision": 0.6,
+          "recall": 0.5,
+          "f1": 0.5454545454545454
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 2,
+          "false_negatives": 3,
+          "precision": 0.6,
+          "recall": 0.5,
+          "f1": 0.5454545454545454
+        }
+      }
+    },
+    {
+      "sentence_id": "test-75",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.9333333333333333,
+          "tokens": 30
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-76",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 6,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 24
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-77",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 0,
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "token_accuracy": 0.75,
+          "tokens": 8
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "sentence_id": "test-78",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "token_accuracy": 0.9090909090909091,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-79",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75,
+          "token_accuracy": 0.9090909090909091,
+          "tokens": 11
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1": 0.5714285714285715
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        }
+      }
+    },
+    {
+      "sentence_id": "test-80",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 3
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-81",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 4,
+          "false_positives": 2,
+          "false_negatives": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "token_accuracy": 0.8,
+          "tokens": 10
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-82",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "token_accuracy": 0.9,
+          "tokens": 10
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        }
+      }
+    },
+    {
+      "sentence_id": "test-83",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 6
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-84",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "token_accuracy": 0.9333333333333333,
+          "tokens": 15
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        }
+      }
+    },
+    {
+      "sentence_id": "test-85",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 15
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-86",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 5,
+          "false_negatives": 2,
+          "precision": 0.16666666666666666,
+          "recall": 0.3333333333333333,
+          "f1": 0.2222222222222222,
+          "token_accuracy": 0.6875,
+          "tokens": 16
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 2,
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4
+        }
+      }
+    },
+    {
+      "sentence_id": "test-87",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 16
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-88",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 0.4117647058823529,
+          "tokens": 17
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-89",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 8,
+          "precision": 1.0,
+          "recall": 0.2727272727272727,
+          "f1": 0.42857142857142855,
+          "token_accuracy": 0.5789473684210527,
+          "tokens": 19
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "sentence_id": "test-90",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 4,
+          "false_negatives": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.4,
+          "f1": 0.3636363636363636,
+          "token_accuracy": 0.7647058823529411,
+          "tokens": 17
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4
+        }
+      }
+    },
+    {
+      "sentence_id": "test-91",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 12
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-92",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 8,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 21
+        },
+        "entity_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-93",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "token_accuracy": 0.8571428571428571,
+          "tokens": 7
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "sentence_id": "test-94",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 7
+        },
+        "entity_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-95",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 22
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-96",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 5,
+          "false_negatives": 5,
+          "precision": 0.16666666666666666,
+          "recall": 0.16666666666666666,
+          "f1": 0.16666666666666666,
+          "token_accuracy": 0.7,
+          "tokens": 20
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 3,
+          "false_negatives": 4,
+          "precision": 0.25,
+          "recall": 0.2,
+          "f1": 0.22222222222222224
+        },
+        "partial": {
+          "true_positives": 2,
+          "false_positives": 2,
+          "false_negatives": 3,
+          "precision": 0.5,
+          "recall": 0.4,
+          "f1": 0.4444444444444445
+        }
+      }
+    },
+    {
+      "sentence_id": "test-97",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 12
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-98",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "token_accuracy": 1.0,
+          "tokens": 5
+        },
+        "entity_wise": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "partial": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    {
+      "sentence_id": "test-99",
+      "matching_evaluations": {
+        "token_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "token_accuracy": 1.0,
+          "tokens": 18
+        },
+        "entity_wise": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "partial": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    }
+  ]
+}

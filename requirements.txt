@@ -3,3 +3,4 @@ pandas
 scikit-learn
 python-dotenv
 openai
+huggingface_hub
